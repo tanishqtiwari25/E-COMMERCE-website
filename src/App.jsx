@@ -28,7 +28,7 @@ function App() {
                     <AppRoutes />
                   </main>
                   <footer className="py-6 text-center text-xs text-slate-400 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900">
-                    &copy; {new Date().getFullYear()} Vortex Premium Labs Engine. Distributed on enterprise infrastructure.
+                    &copy; {new Date().getFullYear()} Pickk Premium Labs Engine. Distributed on enterprise infrastructure.
                   </footer>
                 </div>
                 <ToastContainer position="bottom-right" autoClose={3000} theme="dark" />
