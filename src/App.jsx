@@ -1,4 +1,5 @@
 import React from 'react';
+//  Yahan humne BrowserRouter import kiya aur usme basename ka setup karenge
 import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,6 +17,7 @@ import { AppRoutes } from './routes/AppRoutes';
 
 function App() {
   return (
+    //  Yahan BrowserRouter ke andar repository ka name (basename) daal diya hai
     <BrowserRouter>
       <ThemeProvider>
         <AuthProvider>

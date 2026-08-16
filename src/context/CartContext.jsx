@@ -41,11 +41,22 @@ export const CartProvider = ({ children }) => {
   const clearCart = () => setCart([]);
 
   const subTotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-  const gstAmount = subTotal * 0.18; // 18% standard GST calculation tier
+  const gstAmount = subTotal * 0.18;
   const grandTotal = subTotal + gstAmount;
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQty, clearCart, subTotal, gstAmount, grandTotal }}>
+    <CartContext.Provider 
+      value={{ 
+        cart, 
+        addToCart, 
+        removeFromCart, 
+        updateQty, 
+        clearCart, 
+        subTotal, 
+        gstAmount, 
+        grandTotal 
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
